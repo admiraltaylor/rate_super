@@ -16,8 +16,11 @@
         </style>
     </head>
     <body>
-        <a href="/signup">Sign Up</a>
-        <a href="/ratings">Global Rankings</a>
-        @yield('content')
+        @include('inc.navbar')
+        <div class="container">
+            <div class="jumbotron text-center">
+                    @yield('content')
+            </div>                
+        </div>        
     </body>
 </html>

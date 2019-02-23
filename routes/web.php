@@ -15,4 +15,5 @@ Route::get('/', 'PagesController@index');
 Route::get('/ratings', 'PagesController@ratings');
 Route::get('/signup', 'PagesController@signup');
 Route::get('/user/{id}', 'PagesController@user');
+Route::get('/login', 'PagesController@login');
 
