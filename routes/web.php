@@ -18,9 +18,6 @@ Route::get('/user/{id}', 'PagesController@user');
 Route::get('/login', 'PagesController@login');
 
 Route::resource('ratings', 'RatingsController');
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
