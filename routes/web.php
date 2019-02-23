@@ -11,6 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'PagesController@index');
+
+Route::get('/ratings', function() {
+    return view('pages.ratings');
 });
+
+Route::get('/signup', function() {
+    return view('pages.signup');
+});
+
+Route::get('/user/{id}', function($id) {
+    return view('pages.user');
+});
+
